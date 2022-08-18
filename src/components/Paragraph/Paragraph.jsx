@@ -1,9 +1,10 @@
 import React from 'react';
+import S from './Paragraph.module.css';
 const Paragraph = () => {
   return (
-    <div>
-      <h2>Ajude o algoritmo a ser mais certeiro</h2>
-      <p>
+    <div className={S.div}>
+      <h2 className={S.h2}>Ajude o algoritmo a ser mais certeiro</h2>
+      <p className={S.p}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -14,7 +15,7 @@ const Paragraph = () => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
-      <p>
+      <p className={S.p}>
         The purpose of lorem ipsum is to create a natural looking block of text
         (sentence, paragraph, page, etc.) that doesn't distract from the layout.
         A practice not without controversy, laying out pages with meaningless
