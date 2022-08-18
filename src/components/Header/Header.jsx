@@ -1,4 +1,5 @@
 import React from 'react';
+import Menu from '../Menu/Menu';
 import S from './Header.module.css';
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
         Todos os produtos desta lista foram selecionados a partir da sua
         navegação. Aproveite!
       </p>
+      <Menu />
     </header>
   );
 };
