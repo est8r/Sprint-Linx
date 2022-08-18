@@ -3,11 +3,11 @@ import S from './Menu.module.css';
 const Menu = () => {
   return (
     <div>
-      <nav>
-        <button>Conheça a Linx</button>
-        <button>Ajude o algoritmo</button>
-        <button>Seus Produtos</button>
-        <button>Compartilhe</button>
+      <nav className={S.nav}>
+        <button className={S.button}>Conheça a Linx</button>
+        <button className={S.button}>Ajude o algoritmo</button>
+        <button className={S.button}>Seus Produtos</button>
+        <button className={S.button}>Compartilhe</button>
       </nav>
     </div>
   );
