@@ -4,13 +4,12 @@
 }
 
 .button{
-  background-color: white;
+  background-color: #ececec;
   width: 180px;
   height: 40px;
   border-radius: 4px;
   margin: 0 20px;
-  box-shadow: 2px 5px 8px #00000029;
-  border: 1px solid #707070;
+  border: none;
   text-decoration: none;
   color: gray;
   font-size: 14px;
