@@ -3,26 +3,28 @@ import Label from '../Label/Label.jsx';
 import Input from '../Input/Input';
 const Form = () => {
   return (
-    <form>
-      <div>
+    <form className={S.form}>
+      <div className={S.divInput}>
         <Label texto="Seu Nome" />
-        <Input id="name" type="text" />
-      </div>
-      <div>
-        <Label texto="Email" />
-        <Input id="email" type="email" />
-      </div>
-      <div>
-        <Label texto="CPF" />
-        <Input id="cpf" type="text" />
+        <Input className={S.input} id="name" type="text" />
       </div>
 
-      <section>
-        <div>
+      <div className={S.divInput}>
+        <Label texto="Email" />
+        <Input className={S.input} id="email" type="email" />
+      </div>
+
+      <div className={S.divInput}>
+        <Label texto="CPF" />
+        <Input className={S.input} id="cpf" type="text" />
+      </div>
+
+      <section className={S.sectionRadio}>
+        <div className={S.divRadio}>
           <Input id="fem" name="radio" type="radio" />
           <Label texto="Feminino" />
         </div>
-        <div>
+        <div className={S.divRadio}>
           <Input id="masc" name="radio" type="radio" />
           <Label texto="Masculino" />
         </div>
