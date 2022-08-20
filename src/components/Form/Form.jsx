@@ -31,6 +31,7 @@ const Form = () => {
           <Label texto="Masculino" />
         </div>
       </section>
+      <Button className={S.button} content="Enviar" />
     </form>
   );
 };
