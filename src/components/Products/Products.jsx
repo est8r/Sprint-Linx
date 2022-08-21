@@ -2,6 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Card from '../Card/Card.jsx';
+import Button from '../Button/Button.jsx';
+import Separator from '../Separator/Separator.jsx';
+import S from './Products.module.css';
 
 const Products = () => {
   const [card, setNewCard] = useState([]);
@@ -24,6 +27,7 @@ const Products = () => {
 
   return (
     <div>
+      <Separator text="Sua seleção especial" />
       <div>
         {card.length > 0 &&
           card.map((card, index) => {
@@ -41,6 +45,8 @@ const Products = () => {
             );
           })}
       </div>
+      <Button onClick={nextSection} content="Ainda mais produtos aqui" />
+      <Separator text="Compartilhe a novidade" />
     </div>
   );
 };
