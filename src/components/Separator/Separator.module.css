@@ -1,0 +1,20 @@
+*{
+  margin-bottom: 0;
+}
+
+hr {
+  width: 400px;
+  border-top: 2px solid gray;
+  border-radius: 20%;
+}
+
+.section{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.h4{
+  color: gray;
+  margin-bottom: 0;
+}
