@@ -1,7 +1,8 @@
 import React from 'react';
+import S from './Input.module.css';
 
-const Input = ({ className, id, type }) => {
-  return <input className={className} id={id} type={type} />;
+const Input = ({ id, type }) => {
+  return <input className={S.input} id={id} type={type} />;
 };
 
 export default Input;
