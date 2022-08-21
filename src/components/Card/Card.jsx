@@ -1,20 +1,21 @@
 import React from 'react';
 import Button from '../Button/Button';
+import S from './Card.module.css';
 
 const Card = ({ img, name, description, oldValue, newValue, times, or }) => {
   return (
-    <div>
-      <div>
-        <img src={img} alt="product" />
+    <div className={S.div}>
+      <div className={S.img}>
+        <img className={S.img} src={img} alt="produto" />
       </div>
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <p>{'R$ ' + oldValue + ',00'}</p>
-      <h4>{'R$ ' + newValue + ',00'}</h4>
-      <p>
+      <h2 className={S.h2}>{name}</h2>
+      <p className={S.desc}>{description}</p>
+      <p className={S.oldValue}>{'R$ ' + oldValue + ',00'}</p>
+      <h4 className={S.h4}>{'R$ ' + newValue + ',00'}</h4>
+      <p className={S.p}>
         ou {times + 'x'} de: {'R$ ' + or}
       </p>
-      <Button content="Comprar" />
+      <Button className={S.button} content="Comprar" />
     </div>
   );
 };
