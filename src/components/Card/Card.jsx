@@ -1,10 +1,12 @@
 import React from 'react';
 import Button from '../Button/Button';
+import Rating from '../Rating/Rating';
 import S from './Card.module.css';
 
 const Card = ({ img, name, description, oldValue, newValue, times, or }) => {
   return (
     <div className={S.div}>
+      <Rating />
       <div className={S.img}>
         <img className={S.img} src={img} alt="produto" />
       </div>
