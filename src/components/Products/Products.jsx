@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Card from '../Card/Card.jsx';
 
 const Products = () => {
   const [card, setNewCard] = useState([]);
@@ -23,7 +24,23 @@ const Products = () => {
 
   return (
     <div>
-      <div>); })}</div>
+      <div>
+        {card.length > 0 &&
+          card.map((card, index) => {
+            return (
+              <Card
+                img={card.image}
+                name={card.name}
+                description={card.description}
+                oldValue={card.oldPrice}
+                newValue={card.price}
+                times={card.installments.count}
+                or={card.installments.value}
+                key={index}
+              />
+            );
+          })}
+      </div>
     </div>
   );
 };
