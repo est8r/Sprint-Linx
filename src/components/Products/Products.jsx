@@ -13,6 +13,14 @@ const Products = () => {
     setNewCard([...card, ...json.products]);
   };
 
+  function nextSection() {
+    setSection(section + 1);
+  }
+
+  useEffect(() => {
+    handleReq();
+  }, [section]);
+
   return (
     <div>
       <div>); })}</div>
