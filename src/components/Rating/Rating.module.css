@@ -1,0 +1,25 @@
+.rating{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  }
+  
+  .rating i{
+  display: block;
+  width: 100px;
+  height: 100%;
+  background: url(../../assets/golden-star.png) repeat-x;
+  }
+  .rating a:link{
+  display:block;
+  float:left;
+  width: 20%;
+  opacity: 25%;
+  }
+  .rating img{
+  width:100%;
+  height:auto;
+  }
+  .rating>i>a:hover ~ a:link{
+  opacity:1;
+  }
