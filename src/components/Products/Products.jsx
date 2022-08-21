@@ -26,9 +26,9 @@ const Products = () => {
   }, [section]);
 
   return (
-    <div>
+    <div className={S.div}>
       <Separator text="Sua seleção especial" />
-      <div>
+      <div className={S.page}>
         {card.length > 0 &&
           card.map((card, index) => {
             return (
@@ -45,7 +45,11 @@ const Products = () => {
             );
           })}
       </div>
-      <Button onClick={nextSection} content="Ainda mais produtos aqui" />
+      <Button
+        className={S.button}
+        onClick={nextSection}
+        content="Ainda mais produtos aqui"
+      />
       <Separator text="Compartilhe a novidade" />
     </div>
   );
