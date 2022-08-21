@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 
 const Card = ({ img, name, description, oldValue, newValue, times, or }) => {
   return (
@@ -13,6 +14,7 @@ const Card = ({ img, name, description, oldValue, newValue, times, or }) => {
       <p>
         ou {times + 'x'} de: {'R$ ' + or}
       </p>
+      <Button content="Comprar" />
     </div>
   );
 };
