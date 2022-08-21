@@ -1,4 +1,7 @@
 import React from 'react';
+import Input from '../Input/Input.jsx';
+import Label from '../Label/Label.jsx';
+import Button from '../Button/Button.jsx';
 
 const FriendForm = () => {
   return (
@@ -8,9 +11,16 @@ const FriendForm = () => {
         agora!
       </p>
       <section>
-        <div></div>
-        <div></div>
+        <div>
+          <Label texto="Nome do amigo:" />
+          <Input type="text" />
+        </div>
+        <div>
+          <Label texto="E-mail do amigo:" />
+          <Input type="email" />
+        </div>
       </section>
+      <Button content="Enviar" />
     </form>
   );
 };
