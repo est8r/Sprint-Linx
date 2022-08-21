@@ -5,6 +5,10 @@ import Button from '../Button/Button.jsx';
 import S from './FriendForm.module.css';
 
 const FriendForm = () => {
+  function sending(e) {
+    e.preventDefault();
+    alert('Amigo Convidado!');
+  }
   return (
     <form className={S.form}>
       <p className={S.p}>
@@ -21,7 +25,7 @@ const FriendForm = () => {
           <Input type="email" />
         </div>
       </section>
-      <Button className={S.button} content="Enviar" />
+      <Button onClick={sending} className={S.button} content="Enviar" />
     </form>
   );
 };
