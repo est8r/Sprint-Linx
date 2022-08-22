@@ -3,6 +3,7 @@ import Header from './components/Header/Header.jsx';
 import Main from './components/Main/Main.jsx';
 import Products from './components/Products/Products.jsx';
 import FriendForm from './components/FriendForm/FriendForm.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Main />
       <Products />
       <FriendForm />
+      <Footer />
     </div>
   );
 }
