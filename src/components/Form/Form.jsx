@@ -3,22 +3,27 @@ import S from './Form.module.css';
 import Button from '../Button/Button.jsx';
 import Label from '../Label/Label.jsx';
 import Input from '../Input/Input';
-const Form = () => {
+
+const Form = (type) => {
+  const name = useForm();
+  const email = useForm('email');
+  const cpf = useForm('cpf');
+
   return (
-    <form className={S.form}>
+    <form onSubmit={handleSubmit} className={S.form}>
       <div className={S.divInput}>
-        <Label texto="Seu Nome" />
-        <Input className={S.input} id="name" type="text" />
+        <Label htmlFor="name" texto="Seu Nome" />
+        <Input className={S.input} id="name" type="text" {...name} />
       </div>
 
       <div className={S.divInput}>
         <Label texto="Email" />
-        <Input className={S.input} id="email" type="email" />
+        <Input className={S.input} id="email" type="email" {...email} />
       </div>
 
       <div className={S.divInput}>
         <Label texto="CPF" />
-        <Input className={S.input} id="cpf" type="text" />
+        <Input className={S.input} id="cpf" type="text" {...cpf} />
       </div>
 
       <section className={S.sectionRadio}>
@@ -31,7 +36,7 @@ const Form = () => {
           <Label texto="Masculino" />
         </div>
       </section>
-      <Button className={S.button} content="Enviar" />
+      <Button className={S.button} content="enviar" />
     </form>
   );
 };
