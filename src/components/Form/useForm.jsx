@@ -13,6 +13,14 @@ const types = {
   },
 };
 
-return {};
+const useForm = (type) => {
+  const [value, setValue] = useState('');
+  const [error, setError] = useState(null);
+
+
+
+  return {
+  
+};
 
 export default useForm;
