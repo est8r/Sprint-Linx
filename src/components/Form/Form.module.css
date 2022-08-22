@@ -20,7 +20,6 @@
 .divInput{
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   gap: 8px;
 }
@@ -36,4 +35,11 @@
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .form{
+    width: 300px;
+    gap: 40px;
+  }
 }

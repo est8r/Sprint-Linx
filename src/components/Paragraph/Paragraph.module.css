@@ -8,7 +8,7 @@
   color: #2f2f2f;
   background-color: #e4e4e4;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 
 .p{
@@ -17,4 +17,14 @@
   color: gray;
   line-height: 23px;
   padding-left: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  .div{
+    width: 70%;
+  }
+
+  .h2{
+    font-size: 15px;
+  }
 }

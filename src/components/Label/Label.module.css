@@ -3,3 +3,7 @@
   text-align: flex-start;
   color: gray;
 }
+
+@media screen and (max-width: 450px) {
+  .label{font-size: 12px;}
+}

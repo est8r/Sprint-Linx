@@ -27,6 +27,19 @@
   margin-bottom: 150px;
 }
 
+@media screen and (max-width: 450px) {
+  .div{
+    margin: 10% 10% 0 15%;
+  }
+  
+  .page{
+    flex-direction: column;
+  }
+
+  .button{
+    margin-top: 50px;
+  }
+}
 
 
 

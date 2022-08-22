@@ -18,3 +18,12 @@ hr {
   color: gray;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 450px) {
+  hr {
+    width: 100px
+  }
+  .h4{
+    text-align: center;
+  }
+}
