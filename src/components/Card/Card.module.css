@@ -2,7 +2,7 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
 
 .img{
@@ -30,6 +30,7 @@
   color: gray;
   font-size: 11px;
   width: 80%;
+  line-height: 14px;
 }
 
 .h4{
@@ -47,6 +48,12 @@
   color: gray;
   background-color: transparent;
   margin-top: 20px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .button:hover{
