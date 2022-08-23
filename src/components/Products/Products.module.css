@@ -29,7 +29,9 @@
 
 @media screen and (max-width: 450px) {
   .div{
-    margin: 10% 10% 0 15%;
+    margin: 10% auto;
+    align-items: flex-start;
+    width: 80%;
   }
   
   .page{
