@@ -1,5 +1,10 @@
 # Linx Inpulse - Landing Page
-Projeto orientado pela Resilia Educação para o desenvolvimento de uma Landing Page com React.js.
+Projeto orientado pela Resilia Educação para o desenvolvimento de uma Landing Page com React.js baseado no desafio do processo seletivo da front da Linx Impulse.
+
+<br>
+
+![Captura de tela 2022-08-23 233629](https://user-images.githubusercontent.com/87023023/186305892-614e871f-4644-4ba9-9da8-843c4d26c3e8.png)
+
 
 ### 📍 Proposta
 
