@@ -37,7 +37,7 @@ conteúdo (ex: O campo de email deve conter um email válido);<br>
 $ git clone https://github.com/est8r/Sprint-Linx.git
 
 // Entre na pasta do projeto
-$ cd desafio-reactjs-modulo5
+$ cd sprint-linx
 
 // Instale as dependências
 $ npm install
