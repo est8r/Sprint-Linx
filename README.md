@@ -31,6 +31,28 @@ conteúdo (ex: O campo de email deve conter um email válido);<br>
 
 #
 
+### 👨‍💻 Como rodar o projeto?
+```
+// Clone o repositório
+$ git clone https://github.com/est8r/Sprint-Linx.git
+
+// Entre na pasta do projeto
+$ cd desafio-reactjs-modulo5
+
+// Instale as dependências
+$ npm install
+ ou
+$ yarn install
+
+// Rode o comando
+$ npm run dev
+ou
+$ yarn dev
+
+// O projeto estará rodando em http://localhost:5173
+```
+#
+
 ### 💡 Tecnologias usadas | Implementação
 
 Implementando conceitos e tecnologias desenvolvidos em aula
